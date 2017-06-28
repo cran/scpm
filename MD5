@@ -1,0 +1,17 @@
+7e40efefcad4e93c1aa3b995db958b23 *DESCRIPTION
+423de663b4d16ee9412a4dc7f2ef6c82 *NAMESPACE
+f65f5274d5d97a87dd566a036e95cefb *R/scpm_1.0-1.R
+a4f3a0275098e414ad4572f662aa6f19 *man/scpm-package.Rd
+779aacea41d41054b673cd3698b527d9 *man/sss-class.Rd
+5e9edb6af18e7f655a0959d1999ed477 *man/sssFit-class.Rd
+984af4e315877e0cd0063dfa53c856a2 *man/z_A1._Create_sss_data_.Rd
+fd3a9a06ddc64933c916113c508f5a92 *man/z_A2._Define_linear_terms_.Rd
+205d2424eb20b0ec0ebd9c86fa09e493 *man/z_A3._Define_unknown_changes_.Rd
+9dc28a1cc5cc081213a1569a395b2ece *man/z_A4._Define_bivariate_Spline_.Rd
+1b8080cea96e09f70eb8ae25077b9cf4 *man/z_A5._Estimate_the_model_.Rd
+97a1e5572b0d04e480753cc5a00de93d *man/z_A6._Obtain_approximation_.Rd
+bdb6f12743dc6edc7a7c641e66337a97 *man/z_B1._Testing_surface_.Rd
+3422bf83a7fc0ee237fb13c8dd8d073a *man/z_B2._Plotting_.Rd
+520ad9b75dbb34d70a49995c6e82f013 *man/z_B3._Summary_.Rd
+926db72e283adc1d693e1151d03f023d *man/z_B4._Information_criterion_.Rd
+7029ce6f9f989c8130735d6589f1b67c *man/z_B5._Variogram_.Rd

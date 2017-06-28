@@ -1,0 +1,94 @@
+import(
+	graphics,
+	grDevices,
+	stats,
+	Matrix,
+	RandomFields,
+	methods
+)
+importFrom(
+	interp,
+	interp
+)
+importFrom(
+	MASS,
+	ginv
+)
+importFrom(
+	stats,
+	optim,
+	optimHess,
+	xtabs,
+	model.matrix,
+	model.frame,
+	model.response,
+	terms,
+	formula,
+	quantile
+)
+importFrom(
+	Matrix,
+	Schur
+)
+importFrom(
+	mvtnorm,
+	dmvnorm
+)
+importFrom(
+	lattice,
+	levelplot,
+	panel.levelplot.raster
+)
+importFrom(
+	rgl,
+	persp3d
+)
+export(
+	cp,
+	s2D,
+	is.sss,
+	linear,
+	scp,
+	create.sss,
+	sss,
+	sssFit,
+	is.sss,
+	as.sss,
+	sss2df,
+	plot,
+	summary,
+	AIC,
+	BIC,
+	AICm,
+	AICc,
+	BICc,
+	BICj,
+	GIC,
+	GICpn,
+	GICb,
+	GIChq,
+	Variogram,
+	scpApproximate,
+	testSurface
+)
+exportClasses(
+	sss,
+	sssFit
+)
+exportMethods(
+	"plot",
+	"summary",
+	"AIC",
+	"BIC",
+	"AICm",
+	"AICc",
+	"BICc",
+	"BICj",
+	"GIC",
+	"GICpn",
+	"GICb",
+	"GIChq",
+	"Variogram",
+	"scpApproximate",
+	"testSurface"
+)
