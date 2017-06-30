@@ -1,4 +1,5 @@
 import(
+	geoR,
 	graphics,
 	grDevices,
 	stats,

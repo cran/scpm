@@ -1,7 +1,7 @@
-7e40efefcad4e93c1aa3b995db958b23 *DESCRIPTION
-423de663b4d16ee9412a4dc7f2ef6c82 *NAMESPACE
-f65f5274d5d97a87dd566a036e95cefb *R/scpm_1.0-1.R
-a4f3a0275098e414ad4572f662aa6f19 *man/scpm-package.Rd
+a1e69ab2e56c6eaa438a1a4b6eb88abf *DESCRIPTION
+97f7aa40275e2b318550bbbd51b204f7 *NAMESPACE
+801dc9898651d05c112d04720b03e4a1 *R/scpm_1.0-2.R
+3014cca029a339307865dd7aa2e12b42 *man/scpm-package.Rd
 779aacea41d41054b673cd3698b527d9 *man/sss-class.Rd
 5e9edb6af18e7f655a0959d1999ed477 *man/sssFit-class.Rd
 984af4e315877e0cd0063dfa53c856a2 *man/z_A1._Create_sss_data_.Rd

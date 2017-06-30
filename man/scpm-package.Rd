@@ -7,11 +7,11 @@
 \description{
 Group of functions for spatial smoothing using cubic splines and variogram maximum likelihood estimation. Also allow the inclusion of linear parametric terms and change-points for segmented smoothing splines models.
 }
-\details{
-Group of functions for spatial smoothing using cubic splines and variogram maximum likelihood estimation. Also allow the inclusion of linear parametric terms and change-points for segmented smoothing splines models.
-}
 \author{
 Mario A. Martínez Araya [aut,cre] and Jianxin Pan [ths]
+}
+\note{
+This package allows to estimate spatial spline models to small to middle size datasets, for larger datasets it will depend on the memory of the system. Therefore use it carefully. Currently under development to incorporate additive components.
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 \examples{

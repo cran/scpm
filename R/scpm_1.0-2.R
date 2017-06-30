@@ -283,7 +283,9 @@ linear <- function(formula, data = NULL, contrasts = NULL, intercept = FALSE){
     mf <- eval(mf, parent.frame())
     if(!intercept){
     	if(!is.na(match("(Intercept)",colnames(mf)))){
-    		mf = mf[,-1]
+			nn <- colnames(mf)
+    		mf = as.matrix(mf[,-match("(Intercept)",nn)])
+			colnames(mf) <- nn[-match("(Intercept)",nn)]
     	}
     }
 	return(mf)
@@ -538,6 +540,18 @@ s2D = function(data = NULL, penalty = c("none","cs","ps","tps"), is.X = c("none"
 	ws2D = grepl("s2D\\(",cr)
 	if(sum(ws2D)==1){
 		cs = as.pairlist(parse(text=cr[af$specials$s2D]))[[1]]
+		if(!is.null(el)){
+			if(any(grepl("\\(Intercept\\)",colnames(el)))){
+				if(ncol(el)>1){
+					nel <- colnames(el)
+					el <- as.matrix(el[,-match("(Intercept)",nel)])
+					colnames(el) <- nel[-match("(Intercept)",nel)]
+					cs$intercept <- TRUE
+				} else {
+					el <- NULL
+				}
+			}
+		}
 		if(is.null(cs$data)) cs$data <- data
 		if(is.null(cs$aniso.angle)){ if(!is.null(pars$aniso.angle)){ cs$aniso.angle <- pars$aniso.angle } else { cs$aniso.angle <- 0 }} else { if(is.null(pars$aniso.angle)){ pars$aniso.angle <- cs$aniso.angle } }
 		if(is.null(cs$aniso.ratio)){ if(!is.null(pars$aniso.ratio)){ cs$aniso.ratio <- pars$aniso.ratio } else { cs$aniso.ratio <- 1 }} else { if(is.null(pars$aniso.ratio)){ pars$aniso.ratio <- cs$aniso.ratio } }
@@ -845,7 +859,7 @@ scp <- function(formula, data, initial = NULL, contrasts = NULL,
         mean = rep(0, length(object@zV)), sigma = Sigma, log = TRUE)
     aics <- -2 * logliks - 2 * sum(diag(SS))
     bics <- -2 * logliks - sum(diag(SS)) * log(length(object@zV))
-    ndig <- nchar(strsplit(pv,"\\.")[[1]][2])
+    ndig <- nchar(strsplit(paste(pv),"\\.")[[1]][2])
     o <- list(D = length(object@fit$psi), c = c, null = null, `tr(M0)` = sum(diag(P0)), `tr(S(phi))` = sum(diag(object@fit$S)),
         `tr(S(c))` = sum(diag(SS)), `tr(M(phi))` = sum(diag(object@fit$M)), `tr(M(c))` = sum(diag(MS)),
 		F = round(Ft, 5), p = ifelse(ndig>6,signif(pv),round(pv, 6)), loglik0 = loglik0, aic0 = aic0, bic0 = bic0, loglik = logliks,
@@ -889,6 +903,8 @@ scp <- function(formula, data, initial = NULL, contrasts = NULL,
 	if(missing(tol)){ tol <- .Machine$double.neg.eps*1.0e-10 } else { if(is.null(tol)){ tol <- .Machine$double.neg.eps*1.0e-10 } }
 	if(!is.null(object@fit$approximate))
 		if(object@fit$approximate) stop("Object must be a fit from scp command.")
+	if(is.null(object@fit$g))
+		stop("Model must include a spline component.")
 	cVal <- abs(sum(diag(object@fit$S))-1:nrow(object@fit$M))
 	cVal <- match(min(cVal),cVal)
 	app <- .scpLinearApprox(object = object, c = cVal, tol = tol)
@@ -1332,6 +1348,9 @@ sssFit <- setClass("sssFit",
     atv <- qt(1-alpha/2,length(obj@zV)-ncol(obj@fit$X))*sqrt(diag(obj@fit$var.beta))
     ctable <- cbind(obj@fit$beta,sqrt(diag(obj@fit$var.beta)),tv,ptv,obj@fit$beta-atv,obj@fit$beta+atv)
     colnames(ctable) <- c("estimate","std.error","t(y)","p(|t(y)|>t)","LL(95%)","UL(95%)")
+	nr <- rownames(ctable)
+	nr <- gsub("^Intercept$","(Intercept)",nr)
+	rownames(ctable) <- nr
     return(ctable)
 }
 .scpImagePlot <- function(obj, type = c("obs","fit","g","both"),...){
