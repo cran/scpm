@@ -27,7 +27,7 @@ If we have defined a bivariate spline using \link{s2D} in the formula of \link{s
 Returns a table with the degrees of freedom, sum of squares and mean squares from different sources and the F test and its associated p-value.
 }
 \author{
-Mario A. Martinez Araya <mma@mariomartinezaraya.com> [aut, cre]
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

@@ -27,7 +27,7 @@ Compute and plot the semi-variogram of the semiparametric model from a \code{scp
 
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

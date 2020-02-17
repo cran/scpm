@@ -24,7 +24,7 @@ Objects of this class are created by calls to the command \code{scp} (see \link{
 	}
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 \usage{

@@ -47,7 +47,7 @@ s2D(data = NULL, penalty = c("none",  "cs",  "ps",  "tps"),
 Note that \code{is.X} is only needed if \code{penalty="none"}. By defining \code{is.X="none"} it only define an intercept (if \code{intercept=TRUE}), \code{is.X="tps"} defines an intercept, coordinate 1, and coordinate 2 as covariates, while \code{is.X="tensor"} defines also the interaction coordinate 1*coordinate 2. See \link{scp}.
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

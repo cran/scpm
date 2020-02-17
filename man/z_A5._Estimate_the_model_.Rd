@@ -9,7 +9,7 @@ Fit a spatial semiparametric model based on splines including unknown changes in
 }
 \usage{
 scp(formula, data, initial = NULL, contrasts = NULL,
-        model = exponential, fix.nugget = FALSE, fix.kappa = FALSE,
+        model = "exponential", fix.nugget = FALSE, fix.kappa = FALSE,
         nugget.tol = 1e-15, angle = 0, ratio = 1, use.reml = FALSE,
         use.profile = TRUE, chMaxiter = 20, control = list())
 }
@@ -59,7 +59,7 @@ scp(formula, data, initial = NULL, contrasts = NULL,
 
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 \section{1. Semiparametric model}{
 Assume that the response variable admit the trend surface model \deqn{Y(s) = a^T b + g(s) + \epsilon(s)} where \eqn{a} is a known vector of covariates and \eqn{b} their coefficients; \eqn{g(s)} is a deterministic bivariate spline and \eqn{\epsilon(s)} is a Gaussian spatial process (GSP) with mean zero and covariance depending only on the distance \eqn{h} and given by \eqn{Cov(\epsilon(s+h),\epsilon(s))}. This model is also called a \emph{trend surface model}. Given \eqn{n} observed locations \eqn{s_1,\ldots,s_n\in S\subset\Re^2} in a two-dimensional space, then the model is \deqn{Y = Ab + g + \epsilon} where \eqn{Y = (Y(s_1), \ldots, Y(s_n))^T}, \eqn{A} is the known matrix of covariates, \eqn{g = (g(s_1),\ldots,g(s_n))^T} and \eqn{\epsilon = (\epsilon(s_1),\ldots,\epsilon(s_n))^T}. The covariance matrix is given by \eqn{Cov(\epsilon,\epsilon) = \Sigma = \sigma^2 R} with \eqn{R} a valid correlation matrix. Thus \eqn{Y\sim N_n(\mu,\Sigma)} where \eqn{\mu = Ab + g} and the likelihood function is \eqn{L(b,g,\sigma^2,\theta;Y) = (2\pi)^{-n/2}|\Sigma|^{-1/2}\exp\{-\frac{1}{2}(Y-\mu)^T\Sigma^{-1}(Y-\mu)\}} with \eqn{\theta} the parameters that define the correlation matrix \eqn{R}.

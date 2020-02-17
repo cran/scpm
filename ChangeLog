@@ -1,0 +1,48 @@
+# R package scpm
+
+    Author: Mario A. Martinez Araya
+    email: r@marioma.me
+    url: https://marioma.me?i=soft
+
+** Denotes major changes.
+
+## [Unreleased]
+
+### Working on
+
+    ** Additive models estimation with the same approach (with repeated data).
+    ** Different parameterization for change-points estimation.
+    ** Estimation using vectorized matrices (with repeated data).
+    * Add vignette explaining better its use.
+
+## [2.0.0] - 2020-02-13
+
+### Added
+
+    * Improved verbosity during computation.
+    * Allows repeated or spatially close observations.
+    ** Alternative penalties.
+
+### Changed
+
+    ** Improved version of planarity test for surfaces.
+    * Example using imported landim1 data taken from geoR.
+
+### Removed
+
+    * Dependency on geoR package.
+
+## [1.0.2] - 2017-06-20
+
+### Changed
+
+    * Fix to verbosity during estimation.
+
+## [1.0.1] - 2017-05-17
+
+### Added
+
+    * Fit surfaces, parametric components and semivariograms using smoothing splines.
+    * Add change-points and/or contours of change to the model.
+    * Test planarity for surfaces.
+    * Example using landim1 data from geoR.

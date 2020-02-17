@@ -1,5 +1,4 @@
 import(
-	geoR,
 	graphics,
 	grDevices,
 	stats,
@@ -93,3 +92,8 @@ exportMethods(
 	"scpApproximate",
 	"testSurface"
 )
+useDynLib(
+	scpm,
+	h2d
+)
+

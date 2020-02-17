@@ -46,7 +46,7 @@ Draw an image, perspective or levelplot of the observed, fitted values or estima
 
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

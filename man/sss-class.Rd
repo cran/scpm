@@ -25,7 +25,7 @@ Objects can be created by calls of the form \code{sss(...)}.
 	}
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 \usage{

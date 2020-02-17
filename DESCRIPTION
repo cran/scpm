@@ -1,22 +1,18 @@
 Package: scpm
 Type: Package
 Title: An R Package for Spatial Smoothing
-Version: 1.0-2
-Date: 2017-06-30
-Author: Mario A. Martínez Araya [aut,cre] and Jianxin Pan [ths]
-Maintainer: Mario A. Martínez Araya <mma@mariomartinezaraya.com>
+Version: 2.0.0
+Date: 2020-02-14
+Author: Mario A. Martinez Araya [aut,cre,cph]
+Maintainer: Mario A. Martinez Araya <r@marioma.me>
 Description: Group of functions for spatial smoothing using cubic splines and variogram maximum likelihood estimation. Also allow the inclusion of linear parametric terms and change-points for segmented smoothing splines models.
 License: GPL (>= 2)
 Depends: R (>= 2.10), stats, Matrix, RandomFields, interp
-Imports: geoR, methods, rgl, lattice, mvtnorm, MASS, graphics,
-        grDevices
+Imports: methods, rgl, lattice, mvtnorm, MASS, graphics, grDevices
 Enhances: fields
-Encoding: latin1
-Note: This package allows to estimate spatial spline models to small to
-        middle size datasets, for larger datasets it will depend on the
-        memory of the system. Therefore use it carefully. Currently
-        under development to incorporate additive components.
-NeedsCompilation: no
-Packaged: 2017-06-30 00:47:09 UTC; andres
+URL: https://marioma.me?i=soft
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2020-02-14 14:16:30 UTC; mma
 Repository: CRAN
-Date/Publication: 2017-06-30 13:08:43 UTC
+Date/Publication: 2020-02-17 13:30:02 UTC

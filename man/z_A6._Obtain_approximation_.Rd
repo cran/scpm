@@ -27,7 +27,7 @@ Approximation to a spatial semiparametric model based on a bivariate spline.
 This command return an object of class \code{sssFit}.
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

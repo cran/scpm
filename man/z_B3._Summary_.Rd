@@ -21,7 +21,7 @@ Report estimated coefficients, standard errors and t-tests for parametric effect
 
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 

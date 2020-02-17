@@ -68,11 +68,11 @@ If \code{only.criterion=TRUE} returns the value of the criterion. If \code{only.
 }
 \references{
 	\itemize{
-		\item{\enc{Müller}{Muller}, Samuel; Scealy, J. L. and Welsh, A. H. (2013) Model Selection in Linear Mixed Models. Statist. Sci. \bold{28}, no. 2, 135--167. \href{http://doi.org/10.1214/12-STS410}{doi:10.1214/12-STS410}. \url{http://projecteuclid.org/euclid.ss/1369147909}.}
+		\item{\enc{Mueller}{Muller}, Samuel; Scealy, J. L. and Welsh, A. H. (2013) Model Selection in Linear Mixed Models. Statist. Sci. \bold{28}, no. 2, 135--167. \href{http://doi.org/10.1214/12-STS410}{doi:10.1214/12-STS410}. \url{http://projecteuclid.org/euclid.ss/1369147909}.}
 	}
 }
 \author{
-Mario Martinez Araya, \email{mma@mariomartinezaraya.com}
+Mario A. Martinez Araya, \email{r@marioma.me}
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~ 
 
